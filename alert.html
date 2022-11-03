@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Page</title>
+    <link rel="stylesheet" href="Styling/log.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="headerdb">
+            <img src="Images/logo2.png" width="90" height="60" style="padding-left: 10px;" alt="">
+        
+            <h1 style="position:absolute ; color:rgb(173, 0, 0); right: 5px; line-height: 65px;">DASHBOARD</h1>
+        </div>
+
+        <div id="maindb">
+        <div id="sidebardb">
+            <ul style="list-style:none; padding-top: 30px;" >
+                <li style="padding-bottom: 40px;"><a style="text-decoration: none;  color: rgb(165, 0, 0);" href="dashboard.html">Home</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none;  color: rgb(155, 0, 0);" href="alert.html">Alerts</a></li>
+                <li style="padding-bottom: 45px;"> <a style="text-decoration: none; color: rgb(163, 0, 0);" href="stats.html">Status</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none; color: rgb(160, 0, 0);" href="admprofile.html">Profile</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none; color: rgb(160, 0, 0);" href="loggedin.html">Signout</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center;  width: 100%; height: 50px; bottom: 0px; border: solid rgb(122, 0, 0) 1px; position: absolute;"  >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(122, 0, 0)" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                <i class="bi bi-person-circle"></i>
+                Administrator
+            </div>
+
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; height:100%;">
+            <h1 style="color: rgb(163, 0, 0); position: absolute; top: 70px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+                </svg>
+                <i class="bi bi-bell-fill"></i>
+                ALERTS <div style="height: 20px; width:20px; border-radius:50%; border:1px solid; display: flex; justify-content: center; align-items: center; font-size: 10px; "> 10</div>
+            
+            </h1>
+
+
+            <div style="display: grid; border-radius: 15px; justify-content: center; height: 400px; width: 500px; background-color: rgba(0, 0, 0, 0.4);" >
+                <div style="width: 300px; margin: 0; display: flex; align-items: center; border-radius: 10px; background-color:white; height:30px; margin-top: 10px;">
+                    <svg style="padding-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-exclamation-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0Zm0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    </svg> 
+                    <i class="bi bi-envelope-exclamation-fill"></i><h4>DanielMthu07@gmail.com </h4>
+                </div>
+                <div style="width: 300px; display: flex; align-items: center; border-radius: 10px; background-color:white; height:30px; margin-top: 2px;">
+                    <svg style="padding-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-exclamation-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0Zm0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    </svg>
+                    <i class="bi bi-envelope-exclamation-fill"></i><h4>ThembaThimba@gmail.com </h4>
+                </div>
+                <div style="width: 300px; display: flex; align-items: center; border-radius: 10px; background-color:white; height:30px; margin-top: 2px;">
+                    <svg style="padding-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-exclamation-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0Zm0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    </svg>
+                    <i class="bi bi-envelope-exclamation-fill"></i><h4>celaumusa@gmail.com </h4>
+                </div>
+
+
+                <div style="width: 300px; display: flex; align-items: center; border-radius: 10px; background-color:white; height:30px; margin-top: 2px;">
+                    <svg style="padding-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-exclamation-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1.5a.5.5 0 0 1-1 0V11a.5.5 0 0 1 1 0Zm0 3a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"/>
+                    </svg>
+                    <i class="bi bi-envelope-exclamation-fill"></i><h4>celaumusa@gmail.com </h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>  
+    <div id="footerdb">Copyrights @ Bd all rights reserved</div>
+
+</body>
+</html>

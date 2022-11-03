@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" href="Styling/log.css">
+    <style>
+        .main-container{
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-container h1{
+            color: #8D0E05;
+        }
+
+        .profile-container{
+            padding: 20px;
+            font-weight: 700;
+            display: block;justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .profile-image{
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        .form-details{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px;
+            
+        }
+
+        .input-box input{
+            width: 100%;
+            height: 40px;
+        }
+        #country{
+        width: 38%;
+        height: 40px;
+        }
+
+        #phone{
+            
+            width: 58%;
+            height: 40px;
+        }
+
+        #btn{
+            margin: 20px 0;
+            width: 100%;
+            height: 35px;   
+            background-color: #8D0E05;        
+        }
+
+        #file{
+            display: none;
+        }
+
+        .file{
+            background-color: #8D0E05;
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+            position: absolute;
+            top: 100px;
+            left: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="headerdb">
+            <img src="Images/logo2.png" width="90" height="60" style="padding-left: 10px;" alt="">
+        
+            <h1 style="position:absolute ; color:rgb(173, 0, 0); right: 5px; line-height: 65px;">DASHBOARD</h1>
+        </div>
+
+        <div id="maindb">
+        <div id="sidebardb">
+            <ul style="list-style:none; padding-top: 30px;" >
+                <li style="padding-bottom: 40px;"><a style="text-decoration: none;  color: rgb(165, 0, 0);" href="dashboard.html">Home</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none;  color: rgb(155, 0, 0);" href="alert.html">Alerts</a></li>
+                <li style="padding-bottom: 45px;"> <a style="text-decoration: none; color: rgb(163, 0, 0);" href="stats.html">Status</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none; color: rgb(160, 0, 0);" href="admprofile.html">Profile</a></li>
+                <li style="padding-bottom: 45px;"><a style="text-decoration: none; color: rgb(160, 0, 0);" href="loggedin.html">Signout</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center;  width: 100%; height: 50px; bottom: 0px; border: solid rgb(122, 0, 0) 1px; position: absolute;"  >
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="rgb(122, 0, 0)" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                <i class="bi bi-person-circle"></i>
+                Administrator
+            </div>
+
+        </div>
+
+        <div style="display:grid; grid-template-columns: 35% auto; position: relative; width: 100%; height:100%; grid-gap: 5px;">
+            <div style=" justify-content: center; display: flex; justify-content: center; height: 400px;">
+                <h2 style="position: absolute; color: rgb(155, 0, 0);">Administrator</h2>
+                <h4 style="position: absolute; padding-top: 30px; color: rgb(0, 0, 0); ">@admin</h4>
+                <svg style="padding-top: 60px;" xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+                <i class="bi bi-person-circle"></i>
+
+                <button style="position:absolute; margin-top: 150px; color: white; background-color: rgb(207, 0, 0); border: solid 1px black; padding: 2px 10px;">Upload New photo</button>
+
+                <div style="position:absolute; top:190px; height:100px; width:180px; border: solid 1px;">
+                    <p>+27 833 588 0238</p>
+                    <p>admin@gmail.com</p>
+
+                    <p>Gauteng, Jhb</p>
+                    <p>12/08/1992</p>
+                    
+                </div>
+
+                <p style="position:absolute; top:300px; color: rgb(161, 0, 0);">Member since 20 June 2021</p>
+            </div>
+
+
+
+            <div style="border:1px solid; display: flex; justify-content: center; position: relative;">
+                <div class="main-container">
+            
+                    <h1>Profile Update</h1>
+                    
+                    <div class="profile-container">
+                        <div class="profile-image">
+                        
+                        </div>
+                        <label for="file" class="file">Update</label>
+                        <input type="file" id="file">
+        
+                        <p>Name Surname</p>
+                    </div>
+        
+                    <form>
+        
+                        <div class="form-details">
+        
+                            <div class="input-box">
+                                <label for="name">Name</label><br>
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                                
+        
+                            </div>
+        
+        
+                            <div class="input-box">
+                                <label for="surname">Surname</label><br>
+                                <input type="text" name="surname" id="surname" placeholder="Enter Your Surname"><br>
+                                
+        
+                            </div>
+                            <div class="input-box">
+                                <label for="email">Email</label><br>
+                                <input type="text" name="email" id="email" placeholder="Enter Your email"><br>
+                                
+        
+                            </div>
+        
+                            <div class="input-box">
+                                <label for="phone">Phone</label><br>
+                                
+                                <select id="country" name="country" required>
+                                    <option value="select_country">Country</option>
+                                    <option value="rsa">&#127487; &#127462; +27</option>
+                                    <option value="zim">&#127487; &#127484; +263</option>
+                                    <option value="swz">&#x1F1F8; &#x1F1FF; +268</option>
+                                    <option value="su">&#x1F1F8; &#x1F1E9; +249</option>
+        
+        
+                                </select>
+                                <input type="text" name="phone" id="phone" placeholder="Enter Your Cell Number"><br>
+        
+                                
+        
+                            </div>
+                            
+                            <div class="input-box">
+                                <label for="alternative">Alternative Phone</label><br>
+                                <input type="tel" name="alternative" id="alternative" placeholder="Enter Your Cell Number"><br>
+                                
+        
+                            </div>
+        
+                            <div class="input-box">
+                                <label for="">Address</label><br>
+                                <input type="text" name="address" id="address" placeholder="Enter Your Home Address"><br>
+                                
+        
+                            </div>
+        
+                            <div class="input-box">
+                                <label for="password">Password</label><br>
+                                <input type="password" name="password" id="password" placeholder="Enter Your Password"><br>
+                                
+        
+                            </div>
+        
+                            
+        
+                            <div class="category">
+                                
+                                <div id="title">Gender</div><br>
+        
+                                <label for="gender">Male</label>
+                                <input type="radio" name="gender" id="male">
+        
+                                <label for="gender" id="female">Female</label>
+                                <input type="radio" name="gender" id="female">
+        
+                                
+        
+                            </div>
+        
+        
+                        </div>
+        
+                        <button type="submit" id="btn"><a style="text-decoration: none; color: white;" href="login.html"> save changes </a></button>
+        
+        
+                    </form>
+        
+                </div>
+            </div>
+        </div>
+
+    </div>  
+    <div id="footerdb">Copyrights @ Bd all rights reserved</div>
+
+</body>
+</html>
